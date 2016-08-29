@@ -2,16 +2,17 @@
 <manifest>
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
-           review="android-review.googlesource.com"
-          default revision="refs/tags/android-6.0.1_r63" />
+           review="android-review.googlesource.com" />
+  <default revision="refs/tags/android-6.0.1_r63"
+           sync-c="true"
+           sync-j="4" />
   
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org"
            revision="refs/heads/cm-13.0"
-           remote="github"
-           sync-c="true"
-           sync-j="4" />
+           remote="github" />
+           
 
 <!-- BEGIN AOSP -->
   <project path="build" name="platform/build" groups="pdk" >
