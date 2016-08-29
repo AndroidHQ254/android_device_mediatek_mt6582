@@ -6,7 +6,7 @@
            revision="refs/tags/android-6.0.1_r63" />
            
   <default revision="refs/heads/cm-13.0"
-           remote="github"
+           remote="aosp"
            sync-c="true"
            sync-j="4" />
 
@@ -423,7 +423,7 @@
 <!-- END AOSP -->
   
 <!-- BEGIN MEDIATEK -->
-  <project path="device/mediatek/mt6582" name="dmurimi14/android_device_mediatek_mt6582-1" revision="cm-13.0" />
-  <project path="vendor/mediatek/mt6582" name="dmurimi14/android_vendor_mediatek_mt6582" revision="cm-13.0" />
+  <project path="device/mediatek/mt6582" name="dmurimi14/android_device_mediatek_mt6582-1" remote=".." revision="cm-13.0" />
+  <project path="vendor/mediatek/mt6582" name="dmurimi14/android_vendor_mediatek_mt6582" remote=".." revision="cm-13.0" />
 <!-- END MEDIATEK -->
 </manifest>
