@@ -3,10 +3,13 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-6.0.1_r63" />
-           
-  <default revision="refs/heads/cm-13.0"
-           remote="aosp"
+  <default revision="refs/tags/android-6.0.1_r63" />
+  
+  <remote  name="github"
+           fetch=".."
+           review="review.cyanogenmod.org"
+           revision="refs/heads/cm-13.0"
+           remote="github"
            sync-c="true"
            sync-j="4" />
 
