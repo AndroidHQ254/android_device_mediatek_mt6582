@@ -4,6 +4,7 @@
            fetch="https://android.googlesource.com/"
            review="android-review.googlesource.com" />
   <default revision="refs/tags/android-6.0.1_r63"
+           remote="aosp"
            sync-c="true"
            sync-j="4"/>
   
